@@ -1,0 +1,31 @@
+<header class="main-banner-about">
+  <img class="img" src="./assets/logo.jpg">
+</header>
+
+<section class="main-section-about">
+  <hr>
+
+  <div class="list-two">
+      <div class="list-item" *ngFor="let button of buttons">
+        <button class="spread-button" (click)="goTo(button)">{{ button.text }}</button>
+      </div>
+  </div>
+</section>
+
+<div class="some-margin"></div>
+<footer class="main-footer">
+    <h4>בשם ה' נעשה ונצליח</h4>
+</footer>
+
+<!-- <div class="container">
+<div class="img">
+  <img src="./assets/logo.jpg">
+
+
+<div class="button-container">
+<div *ngFor="let button of buttons">
+  <button class="spread-button" (click)="goTo(button)">{{ button.text }}</button>
+</div>
+
+</div> -->
+<!-- </div> -->

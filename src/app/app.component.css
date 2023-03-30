@@ -1,0 +1,15 @@
+/* h1{background-color: blue;}
+
+.img{
+    margin-left: 500px;
+}
+@import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+
+.title {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 7px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    text-align: center;
+}
+
+

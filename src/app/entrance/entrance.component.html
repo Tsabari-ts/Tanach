@@ -1,0 +1,22 @@
+<!-- 
+ <div *ngIf="isHolidayOrShabat">
+    <p>
+
+        The site observes Shabbat and holidays.
+    </p>
+  </div>
+
+<div *ngIf="isHolidayOrShabat">
+    <div class="gif-background">
+        <img src="https://assets.website-files.com/5509bda13cd56c1a716d17d1/5571e6d2ceff75333132a107_BookTL3.gif">
+    </div> 
+    </div> -->
+
+    <div *ngIf="isHolidayOrShabat; else elseTemplate">
+        The site observes Shabbat and holidays.
+      </div>
+      <ng-template #elseTemplate>
+        <div>
+            <img src="https://assets.website-files.com/5509bda13cd56c1a716d17d1/5571e6d2ceff75333132a107_BookTL3.gif">
+        </div>
+      </ng-template>

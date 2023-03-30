@@ -1,0 +1,13 @@
+<div>
+    <button (click)="returnToHomePage()"> חזור</button>
+</div> 
+
+<div *ngIf="data">
+    <div *ngFor="let item of data.he">
+      {{ item }}
+  </div>
+  </div>
+
+  <div *ngFor="let button of buttons">
+    <button class="button-style" (click)="getTheSentence(button)">{{ button.text }}</button>
+  </div>

@@ -1,0 +1,29 @@
+<div>
+    <button (click)="return()"> חזור</button>
+</div> 
+
+<div>
+    <p class="tittle">
+        {{book}}, {{episode}}
+    </p>
+</div>
+
+  <div class="scrollBar">
+    <button type="button" (click)="increaseSpeed()">למטה</button>
+    <button type="button" (click)="stopScrolling()">עצור </button>
+    <button type="button" (click)="scrollUp()">למעלה </button>
+    <button type="button" (click)="nextEpisode()">פרק הבא </button>
+
+  </div>
+
+<div *ngIf="data">
+
+    <div *ngFor="let item of data">
+        <p class="sentences">
+            {{ item }}
+        </p>      
+  </div>
+  </div>
+  
+
+

@@ -1,0 +1,7 @@
+<div>
+    <button (click)="returnToHomePage()"> חזור</button>
+</div> 
+
+<div *ngFor="let button of buttons">
+  <button class="button-style" (click)="getTheEpisodes(button)">{{ button.text }}</button>
+</div>

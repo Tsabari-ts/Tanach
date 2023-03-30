@@ -1,0 +1,156 @@
+/* h1{background-color: blue;}
+
+.img{
+    margin-left: 500px;
+}
+
+/* .btn{
+border-radius: 40px;
+border: 0;
+font-size: 1.8rem;
+font-weight: 600;
+margin: 1rem 0;
+padding: 2rem 3rem;
+text-transform: uppercase;
+white-space: nowrap;
+cursor: pointer;
+}
+
+.btn-primary{
+    background: dodgerblue;
+    color: white;
+}
+
+.btn-primary:hover{
+    background: rgb(8, 123, 238);
+}
+
+.btn-block{
+    width: 33%;
+    /* display: inline-block; */
+/* } */
+
+/* @media (min-width:600px){
+    .btn{
+        font-size: 1.5rem;
+    }
+} 
+*/ 
+/* 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    border-radius: 100px;
+  }
+  
+  .spread-button {
+    border-radius: 40px;
+border: 0;
+font-size: 1.8rem;
+font-weight: 600;
+margin: 1rem 0;
+padding: 2rem 3rem;
+text-transform: uppercase;
+white-space: nowrap;
+cursor: pointer;
+background: dodgerblue;
+color: white;
+float: center;
+  width: 100%;
+  }
+  
+  Responsive styles for mobile
+  @media only screen and (max-width: 600px) {
+    .spread-button {
+      font-size: 1.5rem;
+      align-items: left;
+      width: 100%;
+      padding: 0;
+      flex-direction: 15px;
+    }
+  } 
+   
+  */
+
+  .main-banner-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background:  #1D1D1D;
+    background-size: cover;
+    background-position: center;
+    max-height: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .6;
+}
+
+@media (min-width: 768px) {
+  .main-banner-about {
+      max-height: none;
+      background-attachment: fixed;
+  }
+}
+
+.main-section-about .list-two {
+  background:  #eef1f2;
+  min-height: 300px;
+  padding: 10px 0px;
+}
+
+@media (min-width: 768px) {
+  .main-section-about .list-two {
+      height: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+  }
+}
+
+.main-section-about .list-two .list-item {
+  background: rgba(44, 102, 159, 0.7);
+  text-align: center;
+  width: 400px;
+  height: 50px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.main-footer {
+  width: 100%;
+  background: #333;
+  padding: 5px;
+}
+
+  .main-footer h4 {
+      text-align: center;
+      color: #aaa;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 200;
+  }

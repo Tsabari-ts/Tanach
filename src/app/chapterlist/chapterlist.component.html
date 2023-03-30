@@ -1,0 +1,7 @@
+<div *ngIf="book">
+    <div *ngFor="let versesNumber of book.chapters; 'index + 1' as chapterNumber ">
+        <button class="button-style" (click)="goToChapter(chapterNumber)">
+            {{ getChapterName(chapterNumber) }} ({{ versesNumber }})
+        </button>
+    </div>
+</div>

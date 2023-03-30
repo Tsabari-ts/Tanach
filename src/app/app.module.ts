@@ -11,6 +11,9 @@ import { ShowEpisodeComponent } from './show-episode/show-episode.component';
 import { ShowSentenceComponent } from './show-sentence/show-sentence.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EntranceComponent } from './entrance/entrance.component';
+import { ChapterComponent } from './chapter/chapter.component';
+import { BooklistComponent } from './booklist/booklist.component';
+import { ChapterlistComponent } from './chapterlist/chapterlist.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { EntranceComponent } from './entrance/entrance.component';
     ShowEpisodeComponent,
     ShowSentenceComponent,
     EntranceComponent,
+    ChapterComponent,
+    BooklistComponent,
+    ChapterlistComponent,
   ],
   imports: [
     BrowserModule,HttpClientModule,BrowserAnimationsModule,
@@ -34,6 +40,9 @@ import { EntranceComponent } from './entrance/entrance.component';
       {path:"hagiography-area",component:HagiographyAreaComponent},
       {path:"show-episode",component:ShowEpisodeComponent},
       {path:"show-sentence",component:ShowSentenceComponent},
+      {path:"books",component:BooklistComponent},
+      {path:"books/:book",component:ChapterlistComponent},
+      {path:"books/:book/:chapter",component:ChapterComponent},
       {path:"*",redirectTo:"home-page"}
     ])
   ],
